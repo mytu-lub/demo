@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="082555a2-84c1-4018-8318-919e37689a02" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.8.8" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="E:\develop\apache-maven-3.8.8\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2eUqNzQ9rjmsI727ubIk3efM1Fs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/develop/code/MoneyPrinterTurbo&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;03e1adab2a473d4bf33bf137d1d51e67&quot;
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\develop\code\demo\base\src\main\resources\xml" />
+      <recent name="E:\develop\code\demo\bean\src\main\java\ss\entity" />
+      <recent name="E:\develop\code\demo" />
+      <recent name="E:\develop\code\demo\user-service" />
+      <recent name="E:\develop\code\demo\gateway" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\develop\code\demo\base\src\main\resources\xml" />
+      <recent name="E:\develop\code\demo" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ss.mapper" />
+      <recent name="ss.service" />
+      <recent name="ss.common.utils" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss.control.Solution" />
+      <module name="user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss.control.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss.control.Test" />
+      <module name="user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss.control.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ss.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ss.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="本地Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.tujr-gateway: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="本地Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="tujr-gateway" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.user-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="本地Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="user-service" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.Solution" />
+      <item itemvalue="Docker.docker-compose.yml.tujr-gateway: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.user-service: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.UserServiceApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Docker.docker-compose.yml.user-service: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.tujr-gateway: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="082555a2-84c1-4018-8318-919e37689a02" name="Changes" comment="" />
+      <created>1711969470036</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711969470036</updated>
+      <workItem from="1711969472731" duration="4553000" />
+      <workItem from="1711975626607" duration="1645000" />
+      <workItem from="1711977287022" duration="686000" />
+      <workItem from="1711980381180" duration="451000" />
+      <workItem from="1711985532616" duration="540000" />
+      <workItem from="1712030241782" duration="97000" />
+      <workItem from="1712053806337" duration="1486000" />
+      <workItem from="1712062670912" duration="3432000" />
+      <workItem from="1712066136945" duration="60000" />
+      <workItem from="1712066206387" duration="1035000" />
+      <workItem from="1712067251233" duration="401000" />
+      <workItem from="1712211423834" duration="1055000" />
+      <workItem from="1712212488380" duration="9725000" />
+      <workItem from="1712225001930" duration="96000" />
+      <workItem from="1712227626069" duration="213000" />
+      <workItem from="1712227853237" duration="359000" />
+      <workItem from="1712228224201" duration="24000" />
+      <workItem from="1712228255869" duration="433000" />
+      <workItem from="1712228698030" duration="18000" />
+      <workItem from="1712246381927" duration="903000" />
+      <workItem from="1712304233168" duration="13460000" />
+      <workItem from="1712324979417" duration="1034000" />
+      <workItem from="1712326031139" duration="10000" />
+      <workItem from="1712326101967" duration="5570000" />
+      <workItem from="1712367693900" duration="6933000" />
+      <workItem from="1712376584207" duration="192000" />
+      <workItem from="1712498456301" duration="123000" />
+      <workItem from="1712565330798" duration="297000" />
+      <workItem from="1714458098014" duration="643000" />
+      <workItem from="1714472275907" duration="8000" />
+      <workItem from="1715060254337" duration="738000" />
+      <workItem from="1717035375076" duration="641000" />
+      <workItem from="1717157073465" duration="11000" />
+      <workItem from="1717169823721" duration="946000" />
+      <workItem from="1717211209221" duration="3251000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

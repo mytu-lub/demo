@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <groupId>com.demo</groupId>
+    <artifactId>parent</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>base</module>
+        <module>common</module>
+        <module>bean</module>
+        <module>gateway</module>
+        <module>user-service</module>
+    </modules>
+
+
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.boot.version>2.3.2.RELEASE</spring.boot.version>
+        <alibaba.cloud.version>2.2.5.RELEASE</alibaba.cloud.version>
+        <mysql-connector-java.version>8.0.22</mysql-connector-java.version>
+        <HikariCP.version>4.0.2</HikariCP.version>
+        <lombok.version>1.18.24</lombok.version>
+        <log4j-slf4j-impl.version>2.14.0</log4j-slf4j-impl.version>
+        <commons-lang.version>2.6</commons-lang.version>
+        <guava.version>30.1-jre</guava.version>
+        <jackson.version>2.12.1</jackson.version>
+        <commons-lang3.version>3.12.0</commons-lang3.version>
+        <jasypt.version>1.9.3</jasypt.version>
+        <jaxb-api.version>2.3.1</jaxb-api.version>
+        <slf4j-api.version>1.7.30</slf4j-api.version>
+        <httpclient.version>4.5.13</httpclient.version>
+        <commons-dbutils>1.7</commons-dbutils>
+        <springfox.version>3.0.0</springfox.version>
+        <mybatis.plus.version>3.4.1</mybatis.plus.version>
+        <mybatis.pagehelper.version>5.1.10</mybatis.pagehelper.version>
+        <velocity-engine-core.version>2.0</velocity-engine-core.version>
+        <jetcache.version>2.6.0</jetcache.version>
+        <spring.validation.version>2.4.3</spring.validation.version>
+        <snakeyaml.version>1.25</snakeyaml.version>
+        <aliyun.sdk.version>4.5.18</aliyun.sdk.version>
+        <easypoi.version>4.0.0</easypoi.version>
+        <pagehelper.version>5.2.0</pagehelper.version>
+        <spring-kafka.version>2.6.0</spring-kafka.version>
+        <redission.version>3.15.3</redission.version>
+        <alipay-sdk-java.version>4.10.49.ALL</alipay-sdk-java.version>
+        <easysdk-kernel.version>1.0.2</easysdk-kernel.version>
+        <wxpay-sdk.version>0.0.3</wxpay-sdk.version>
+        <jodconverter-core.version>4.2.2</jodconverter-core.version>
+        <aliyun-sdk-oss.version>3.10.2</aliyun-sdk-oss.version>
+        <httpclient.version>4.5.13</httpclient.version>
+        <mail.version>2.7.8</mail.version>
+        <maven.plugin.version>3.0.2</maven.plugin.version>
+        <hutool.version>5.6.0</hutool.version>
+        <sentinel-datasource-nacos.version>1.8.0</sentinel-datasource-nacos.version>
+        <spring-boot-starter-freemarker.version>2.1.3.RELEASE</spring-boot-starter-freemarker.version>
+    </properties>
+
+    <dependencyManagement>
+
+        <dependencies>
+            <!--            分布式锁-->
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson</artifactId>
+                <version>${redission.version}</version>
+            </dependency>
+<!--            分布式事务 seata-->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
+                <version>${alibaba.cloud.version}</version>
+            </dependency>
+
+            <!--            websocket-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-websocket</artifactId>
+                <version>${alibaba.cloud.version}</version>
+            </dependency>
+            <!--            kafka-->
+            <dependency>
+                <groupId>org.springframework.kafka</groupId>
+                <artifactId>spring-kafka</artifactId>
+                <version>${spring-kafka.version}</version>
+            </dependency>
+            <!--            oss-->
+            <dependency>
+                <groupId>com.aliyun.oss</groupId>
+                <artifactId>aliyun-sdk-oss</artifactId>
+                <version>${aliyun-sdk-oss.version}</version>
+            </dependency>
+            <!--            mybatis-plus-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis.plus.version}</version>
+            </dependency>
+            <!-- mybatis pagehelper 分页插件 -->
+            <!-- https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper -->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper</artifactId>
+                <version>${pagehelper.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-http</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <!--代码生成器-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatis.plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-freemarker</artifactId>
+                <version>${spring-boot-starter-freemarker.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>${snakeyaml.version}</version>
+            </dependency>
+            <!-- mybatis pagehelper 分页插件 -->
+<!--            <dependency>-->
+<!--                <groupId>com.github.pagehelper</groupId>-->
+<!--                <artifactId>pagehelper</artifactId>-->
+<!--                <version>${mybatis.pagehelper.version}</version>-->
+<!--            </dependency>-->
+            <!--数据校验-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-validation</artifactId>
+                <version>${spring.validation.version}</version>
+            </dependency>
+            <!--            缓存-->
+            <dependency>
+                <groupId>com.alicp.jetcache</groupId>
+                <artifactId>jetcache-starter-redis</artifactId>
+                <version>${jetcache.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alicp.jetcache</groupId>
+                <artifactId>jetcache-redis-lettuce</artifactId>
+                <version>${jetcache.version}</version>
+            </dependency>
+            <!--            swagger-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-boot-starter</artifactId>
+                <version>${springfox.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>3.0.3</version>
+            </dependency>
+            <!--微服务之间的调用-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-openfeign</artifactId>
+                <version>${alibaba.cloud.version}</version>
+            </dependency>
+            <!--            数据库工具包-->
+            <dependency>
+                <groupId>commons-dbutils</groupId>
+                <artifactId>commons-dbutils</artifactId>
+                <version>${commons-dbutils}</version>
+            </dependency>
+            <!--            提供对http服务器的访问功能-->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient.version}</version>
+            </dependency>
+            <!--            网关-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-gateway</artifactId>
+                <version>${alibaba.cloud.version}</version>
+            </dependency>
+            <!--            nacos实现配置的动态变更-->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+                <version>${alibaba.cloud.version}</version>
+            </dependency>
+            <!--发送邮件需要的包2.1.5.RELEASE-->
+            <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-mail -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-mail</artifactId>
+                <version>${mail.version}</version>
+            </dependency>
+            <!--            nacos实现服务的注册与发现-->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+                <version>${alibaba.cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+            <!--            支持全栈式Web开发，包括Tomcat和spring-webmvc-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+            <!--            引入了Undertow HTTP引擎（用于替换Tomcat)-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-undertow</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+            <!--            Log4J日志框架-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-log4j2</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+            <!--            mysqlJDBC驱动用于连接数据库-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-java.version}</version>
+            </dependency>
+            <!--                数据库连接池-->
+            <dependency>
+                <groupId>com.zaxxer</groupId>
+                <artifactId>HikariCP</artifactId>
+                <version>${HikariCP.version}</version>
+            </dependency>
+            <!--            Lombok插件-->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <!--            跟java.lang这个包的作用类似，Commons Lang这一组API也是提供一些基础的、
+            通用的操作和处理，如自动生成toString()的结果、自动实现hashCode()和equals()方法、
+            数组操作、枚举、日期和时间的处理等等-->
+            <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>${commons-lang.version}</version>
+            </dependency>
+            <!--            commons-lang升级版 完全支持1.5以上的特性-->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+            <!--            Guava 是一个 Google开发的 基于java的类库集合的扩展项目，各种工具包
+            包括 collections, caching, primitives support,
+            concurrency libraries, common annotations, string processing, I/O, 等等-->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <!--easypoi-->
+            <dependency>
+                <groupId>cn.afterturn</groupId>
+                <artifactId>easypoi-annotation</artifactId>
+                <version>${easypoi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.afterturn</groupId>
+                <artifactId>easypoi-base</artifactId>
+                <version>${easypoi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.afterturn</groupId>
+                <artifactId>easypoi-web</artifactId>
+                <version>${easypoi.version}</version>
+            </dependency>
+
+            <!--            JSON库-->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <!--            密码加密工具包-->
+            <dependency>
+                <groupId>org.jasypt</groupId>
+                <artifactId>jasypt</artifactId>
+                <version>${jasypt.version}</version>
+            </dependency>
+            <!--            根据XML Schema产生Java类-->
+            <dependency>
+                <groupId>javax.xml.bind</groupId>
+                <artifactId>jaxb-api</artifactId>
+                <version>${jaxb-api.version}</version>
+            </dependency>
+            <!--                日志-->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-slf4j-impl</artifactId>
+                <version>${log4j-slf4j-impl.version}</version>
+            </dependency>
+            <!--            阿里短信服务-->
+            <dependency>
+                <groupId>com.aliyun</groupId>
+                <artifactId>aliyun-java-sdk-core</artifactId>
+                <version>${aliyun.sdk.version}</version>
+            </dependency>
+            <!--            阿里微信支付-->
+            <dependency>
+                <groupId>com.alipay.sdk</groupId>
+                <artifactId>alipay-sdk-java</artifactId>
+                <version>${alipay-sdk-java.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alipay.sdk</groupId>
+                <artifactId>easysdk-kernel</artifactId>
+                <version>${easysdk-kernel.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.wxpay</groupId>
+                <artifactId>wxpay-sdk</artifactId>
+                <version>${wxpay-sdk.version}</version>
+            </dependency>
+
+        </dependencies>
+
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+
+                <configuration>
+                    <source>15</source>
+                    <target>15</target>
+                    <encoding>utf-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

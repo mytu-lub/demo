@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.0.176:8848  # Nacos 服务发现地址
+        namespace: public  # Nacos 命名空间 ID
+
+  datasource:
+    url: jdbc:mysql://mysql8.0.31:3306/demo?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&createDatabaseIfNotExist=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+
+  redis:
+    database: 0
+    host: tujr-redis  # 使用 Docker Compose 中 Redis 服务的名称
+    port: 6379
+#    password: 12345
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  # 启用所有 Actuator 端点，以便监控和配置刷新

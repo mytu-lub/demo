@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="user-service" />
+        <module name="common" />
+        <module name="bean" />
+        <module name="gateway" />
+        <module name="base" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="base" target="15" />
+      <module name="bean" target="15" />
+      <module name="common" target="15" />
+      <module name="demo" target="15" />
+      <module name="gateway" target="15" />
+      <module name="mbp" target="15" />
+      <module name="parent" target="15" />
+      <module name="user-service" target="15" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
